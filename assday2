@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment day 2</title>
+    </head>
+    <body>
+        <h2>Arithmetic opertion</h2>
+        <h2>Assignment opertion</h2>
+        <h2>comparision operator</h2>
+        <h2>conditional operator</h2>
+        <h2>unery operator</h2>
+        <script>
+           const a = 15;
+           const b = 18;
+           const c = a + b;
+           const d = a - b;
+           const e = a*b;
+            console.log('sum of numbers is :' + c);
+            console.log('sub of numbers is :' + d);
+            console.log('mul of numbers is :' + e);
+         
+          let p = 4;
+          let q = "hello";
+          console.log(p +=3);
+          console.log(q += 'world');
+       
+          let k = 3;
+          let r = 3;
+          console.log(k==r);
+
+          var age = 26;
+          var beverage = (age>= 22)? "beer" : "juice";
+          console.log(beverage);
+
+         let s = true;
+         let m = false;
+         console.log(+s);
+         console.log(+m);
+
+         var value = 3;
+         var value2 = 5;
+         if(value == value2){
+             console.log("value are same");
+         }
+         else{
+             console.log("value are not same");
+         }
+
+        </script>
+    </body>
+</html>
