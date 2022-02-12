@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment day 4</title>
+    </head>
+    <body>
+      <h2>Assignment day 4</h2>
+    <script>
+
+const people = [ {name: "john", age:23 ,lastname:"ghandhi" , city:"nashik"},
+                {name: "john", age:43, lastname:"mahale" , city:"pune"},
+                {name: "jim", age:101, lastname:"roe" , city:"mumbai"},
+                {name: "bob", age:67, lastname:"ghodke" , city:"nashik"} ,
+                {name: "boby", age:87, lastname:"ghe" , city:"kanpur"} ];
+
+const john = people.find(person => person.name === 'john'&& person.city === 'pune');
+console.log(john);
+people.forEach(people => {
+    for (let key in people) {
+        console.log(`${key}: ${people[key]}`);
+    }
+});
+    </script>
+
+         </body>
+            </html>
