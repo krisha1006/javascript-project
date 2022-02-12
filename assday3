@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+            Assignment day 3
+        </title>
+    </head>
+    <body>
+        <h2>program of table of 5</h2>
+        <h1> Student Result </h1>
+        <form name="forum" onSubmit="return getReport()">
+            <table>
+                <tr>
+                    <td> Name:  <input type="text" id="name1" > </td>
+                </tr>
+                <tr>
+                    <td> <strong> Marks </strong> </td>
+                </tr>
+                <tr>
+                    <td> English  <input type="text" id="eng" > </td>
+                </tr>
+                <tr>
+                    <td> Maths  <input type="text" id="mathss" > </td>
+                </tr>
+                <tr>
+                    <td> Physics  <input type="text" id="physs" > </td>
+                </tr>
+                <tr>
+                    <td> chemistry  <input type="text" id="che" > </td>
+                </tr>
+                <tr>
+                    <td> biology <input type="text" id="bio" > </td>
+                </tr>
+                <tr>
+                    <td> <input type="submit" id="subb"  value="SUBMIT"> </td>
+                </tr>
+            </table>
+        </form>
+        <p id="resname"></p>
+        <p id="getavg"></p>
+    
+    <script>
+        const num = parseInt(prompt('enter the number: '));
+        for (let i =0; i<=10; i++){
+            const result = i * num;
+            console.log(`${num} * ${i} = ${result}`);
+        }
+
+        function getReport() {
+    var name = document.getElementById('name1').value;
+    var eng = parseInt(document.getElementById('eng').value);
+    var mat = parseInt(document.getElementById('mathss').value);
+    var phy = parseInt(document.getElementById('physs').value);
+    var che = parseInt(document.getElementById('che').value);
+    var bio = parseInt(document.getElementById('bio').value);
+
+    var totalmarks = eng + mat + phy +che +bio;
+    console.log(totalmarks);
+
+    var percentage = (totalmarks / 500) * 100;
+
+    document.getElementById('resname').innerHTML = name;
+    document.getElementById('getavg').innerHTML = percentage;
+    console.log(percentage);
+    return false; 
+        }
+    </script>
+    </body>
+</html>
